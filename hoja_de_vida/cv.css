@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9234635e;
+}
+
+header {
+    background-color: #803db87e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile {
+    width: 300px; /* Establece el ancho de la columna izquierda */
+    float: left; /* Hace que el div flote a la izquierda */
+    margin-right: 60px; /* Agrega un margen a la derecha para separar las columnas */
+    text-align: left; /* Alinea el texto a la izquierda dentro del div */
+}
+.education{
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.center-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education,
+.experience,
+.training {
+    width: 600px; /* O el ancho que prefieras */
+    margin: 0 20px 20px; /* Margen en la parte inferior para separar los bloques */
+}
+
+
+h1, h2 {
+    color: #131614;
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 120%;
+}
+
+th, td {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+tbody {
+    background-color:#294b1848;
+}
+
+th {
+    background-color: #774f2781;
+}
