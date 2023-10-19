@@ -1,0 +1,23 @@
+@import './base.css';
+
+
+
+  /* Puedes añadir estilos adicionales aquí si es necesario */
+  .item-header{
+    pointer-events: none;
+    color: #ff3300 !important;
+}
+ /* Heredando estilos del body */
+.header-car {
+    background-color: var(--color-background) !important;
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.border_r{
+  border: 5px solid red;
+}

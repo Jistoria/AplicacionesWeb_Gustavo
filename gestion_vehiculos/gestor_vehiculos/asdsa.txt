@@ -1,0 +1,29 @@
+<div v-if="mostrarMensaje" class="mensaje">{{ mensaje }}</div>
+        <button @click="verlist=!verlist" class="custom-button">Ver Carros</button>
+        <div v-if="verlist">
+          <ListCar :Listcar="carList"></ListCar>
+        </div>
+        <Transition name="slide-fade" >
+          <div v-if="!ingreso" class="d-flex justify-content-center align-items-center  ">
+              <div class="conteiner-fluid">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
+                    <h1>BIENVENIDO!! QUEDAN {{ maxCarros - carList.length  }} PUESTOS </h1>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <button @click="ingresarCar()" :disabled="maxCarros <= carList.length" class="custom-button">Ingresar</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </Transition>
+          <div v-if="ingreso">
+            <IntoCar :car="carList[carList.length - 1]"></IntoCar>
+          </div>
+        
+        <div class="grid-container">
+          <div v-for="i in 20" :key="i" class="grid-item" :class="{ 'occupied': i <= carList.length  }">
+              Puesto {{ i }}
+          </div>
+        </div>
